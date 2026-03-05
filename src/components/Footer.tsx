@@ -50,10 +50,10 @@ export default function Footer() {
               <a href="https://wa.me/19169173541" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-white/5 hover:bg-green-500/20 flex items-center justify-center transition-colors">
                 <MessageCircle size={18} className="text-dark-200" />
               </a>
-              <a href="https://instagram.com/RAD_US" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-white/5 hover:bg-primary-500/20 flex items-center justify-center transition-colors">
+              <a href="https://www.instagram.com/r.a.d._us" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-white/5 hover:bg-primary-500/20 flex items-center justify-center transition-colors">
                 <Instagram size={18} className="text-dark-200" />
               </a>
-              <a href="https://facebook.com/RADUS" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-white/5 hover:bg-primary-500/20 flex items-center justify-center transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61587611498426" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-lg bg-white/5 hover:bg-primary-500/20 flex items-center justify-center transition-colors">
                 <Facebook size={18} className="text-dark-200" />
               </a>
             </div>
@@ -115,14 +115,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Instagram size={18} className="text-pink-500 shrink-0" />
-                <a href="https://instagram.com/RAD_US" target="_blank" rel="noopener noreferrer" className="text-dark-300 hover:text-pink-400 transition-colors text-sm">
-                  @RAD_US
+                <a href="https://www.instagram.com/r.a.d._us" target="_blank" rel="noopener noreferrer" className="text-dark-300 hover:text-pink-400 transition-colors text-sm">
+                  @r.a.d._us
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Facebook size={18} className="text-blue-500 shrink-0" />
-                <a href="https://facebook.com/RADUS" target="_blank" rel="noopener noreferrer" className="text-dark-300 hover:text-blue-400 transition-colors text-sm">
-                  RAD US
+                <a href="https://www.facebook.com/profile.php?id=61587611498426" target="_blank" rel="noopener noreferrer" className="text-dark-300 hover:text-blue-400 transition-colors text-sm">
+                  R.A.D. US
                 </a>
               </li>
               <li className="flex items-start gap-3">

@@ -2,7 +2,6 @@ export type Lang = 'en' | 'ru' | 'es';
 
 export const translations: Record<Lang, Record<string, string>> = {
   en: {
-    // Nav
     'nav.home': 'Home',
     'nav.services': 'Services',
     'nav.ceramic': 'Ceramic Coating',
@@ -11,8 +10,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'nav.about': 'About',
     'nav.contact': 'Contact',
     'nav.bookNow': 'Book Now',
-
-    // Home Hero
     'home.badge': 'We Come to You — Mobile Service Across Orange County',
     'home.title1': 'Mobile Scratch',
     'home.title2': '& Scuff',
@@ -22,8 +19,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'home.mobileService': '100% Mobile Service',
     'home.sameDay': 'Same-Day Appointments',
     'home.freeEstimate': 'Free Estimate',
-
-    // Boats
     'boats.label': 'Boat Detailing',
     'boats.title': 'We Also Detail Boats & Yachts',
     'boats.desc': 'The same professional scratch repair, polishing, and ceramic coating services — now for your boat. We come to your marina or dock anywhere in Orange County.',
@@ -34,12 +29,8 @@ export const translations: Record<Lang, Record<string, string>> = {
     'boats.ceramic': 'Ceramic Coating',
     'boats.ceramicDesc': 'Long-lasting ceramic protection specifically designed for marine environments. Guards against UV, salt, and water damage for years.',
     'boats.bookBoat': 'Book Boat Service',
-
-    // Stats
     'stats.time': 'Average Repair Time',
     'stats.mobile': 'Mobile Service',
-
-    // Services Section
     'services.label': 'What We Do',
     'services.title': 'Mobile Repair & Detailing Services',
     'services.desc': 'We bring professional-grade equipment to your location. Fast turnaround, flawless results — no shop visit needed. Cars & boats.',
@@ -55,8 +46,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'services.mobileDesc': 'We come to your home, office, or anywhere in Orange County. Full professional setup — no need to drive anywhere.',
     'services.headlight': 'Headlight Restoration',
     'services.headlightDesc': 'Crystal-clear headlights in under an hour. We remove haze, yellowing, and oxidation for better visibility and appearance.',
-
-    // How It Works
     'how.label': 'How It Works',
     'how.title': '4 Simple Steps to a Perfect Car',
     'how.desc': 'Getting your car fixed has never been easier. We handle everything — you just enjoy the results.',
@@ -68,21 +57,15 @@ export const translations: Record<Lang, Record<string, string>> = {
     'how.step3Desc': 'Our technicians fix scratches, repair scuffs, and polish your vehicle on the spot.',
     'how.step4': 'Drive Away Perfect',
     'how.step4Desc': 'Inspect the results, enjoy the shine, and get back to your day. It\'s that simple.',
-
-    // Mobile CTA
     'mobileCta.label': 'We Come to You',
     'mobileCta.title': 'No Shop Visit Needed — We\'re 100% Mobile',
     'mobileCta.desc': 'Don\'t waste time driving to a detail shop. Our fully equipped mobile unit comes to your home, office, or anywhere in Orange County. Same professional results, maximum convenience.',
     'mobileCta.schedule': 'Schedule a Visit',
     'mobileCta.seeAll': 'See All Services',
-
-    // Reviews
     'reviews.label': 'Client Testimonials',
     'reviews.title': 'What Our Clients Say',
     'reviews.desc': 'Real feedback from Orange County vehicle owners who love our mobile service.',
     'reviews.readAll': 'Read All Reviews',
-
-    // Guarantees
     'guarantees.label': 'Our Promise',
     'guarantees.title': 'Why Choose R.A.D. US?',
     'guarantees.desc': 'We bring the shop to you — with results that exceed expectations.',
@@ -94,16 +77,10 @@ export const translations: Record<Lang, Record<string, string>> = {
     'guarantees.satisfactionDesc': 'Not happy with the results? We\'ll redo the service at no additional cost. Your satisfaction is everything.',
     'guarantees.freeEstimate': 'Free Estimate',
     'guarantees.freeEstimateDesc': 'Send us a photo or describe the issue — we\'ll give you a free, no-obligation estimate within minutes.',
-
-    // Final CTA
     'finalCta.title1': 'Scratches, Scuffs, Swirl Marks?',
     'finalCta.title2': 'We Fix It — At Your Door.',
     'finalCta.desc': 'Book your mobile repair appointment today. Fast response, expert service, and results you can see and feel. Free estimate!',
-
-    // QR
     'qr.title': 'Scan to Visit Our Website',
-
-    // Gallery
     'gallery.title': 'Our Gallery',
     'gallery.desc': 'Real before & after results from our mobile service across Orange County. Every repair done on-site at the client\'s location.',
     'gallery.all': 'All',
@@ -117,8 +94,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'gallery.ctaTitle1': 'Want These Results for',
     'gallery.ctaTitle2': 'Your Vehicle?',
     'gallery.ctaDesc': 'We\'ll come to your location and deliver the same professional results. Book your mobile service today.',
-
-    // Services page
     'servicesPage.badge': '100% Mobile — We Come to You',
     'servicesPage.title': 'Our Services',
     'servicesPage.desc': 'From fast scratch repair to full polishing and ceramic coating — all performed at your location with professional-grade equipment. Cars & boats.',
@@ -146,8 +121,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'servicesPage.notSure': 'Not Sure Which Service You Need?',
     'servicesPage.notSureDesc': 'Send us a photo of the damage or describe the issue — we\'ll give you a free estimate within minutes.',
     'servicesPage.getFreeQuote': 'Get a Free Estimate',
-
-    // Ceramic page
     'ceramicPage.badge': 'Mobile Application — We Come to You',
     'ceramicPage.title1': 'Professional',
     'ceramicPage.title2': 'Ceramic Coating',
@@ -155,8 +128,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'ceramicPage.desc': 'Protect your vehicle or boat with Orange County\'s premier mobile ceramic coating service. We bring certified installers, premium products, and professional results to your location. Up to 10 years of protection.',
     'ceramicPage.getFreeQuote': 'Get a Free Estimate',
     'ceramicPage.viewPackages': 'View Packages',
-
-    // Reviews page
     'reviewsPage.title': 'Client Reviews',
     'reviewsPage.desc': 'Don\'t just take our word for it. Here\'s what Orange County residents say about our mobile repair service.',
     'reviewsPage.basedOn': 'Based on 200+ reviews',
@@ -164,8 +135,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'reviewsPage.ctaTitle1': 'Join Hundreds of',
     'reviewsPage.ctaTitle2': 'Satisfied Clients',
     'reviewsPage.ctaDesc': 'Experience the convenience of mobile service that comes to you. Book your appointment and see why we\'re Orange County\'s top-rated service.',
-
-    // About page
     'aboutPage.label': 'About Us',
     'aboutPage.title1': 'The Story Behind',
     'aboutPage.title2': 'R.A.D. US',
@@ -195,8 +164,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'aboutPage.doorstepDesc': 'Trust your vehicle or boat to Orange County\'s most experienced mobile scratch repair and polishing professionals. We come to you. Free estimate!',
     'aboutPage.bookMobile': 'Book Mobile Service',
     'aboutPage.viewServices': 'View Our Services',
-
-    // Contact page
     'contactPage.title1': 'Book Your',
     'contactPage.title2': 'Repair',
     'contactPage.desc': 'Ready to give your vehicle or boat the premium care it deserves? Fill out the form below or contact us directly. Free estimate! We typically respond within 1 hour during business hours.',
@@ -227,11 +194,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'contactPage.respond': "We'll get back to you within 1 hour during business hours.",
     'contactPage.another': 'Submit Another Request',
     'contactPage.faqTitle': 'Common Questions',
-
-    // Fixed top bar
     'topbar.text': 'Text Us on WhatsApp: (916) 917-3541',
-
-    // Footer
     'footer.desc': 'R.A.D. US — Real Auto Detailing. Orange County\'s trusted mobile auto & boat scratch repair and detailing service. We come to you — fast scratch & scuff repair, professional polishing at your doorstep. Free estimate!',
     'footer.quickLinks': 'Quick Links',
     'footer.servicesTitle': 'Services',
@@ -256,7 +219,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'nav.about': 'О нас',
     'nav.contact': 'Контакты',
     'nav.bookNow': 'Записаться',
-
     'home.badge': 'Мы приезжаем к вам — мобильный сервис по всему Orange County',
     'home.title1': 'Мобильный ремонт',
     'home.title2': 'царапин и',
@@ -266,7 +228,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'home.mobileService': '100% мобильный сервис',
     'home.sameDay': 'Запись день в день',
     'home.freeEstimate': 'Бесплатный эстимейт',
-
     'boats.label': 'Детейлинг лодок',
     'boats.title': 'Мы также работаем с лодками и яхтами',
     'boats.desc': 'Те же профессиональные услуги по ремонту царапин, полировке и керамическому покрытию — теперь и для вашей лодки. Приезжаем на причал или марину по всему Orange County.',
@@ -277,10 +238,8 @@ export const translations: Record<Lang, Record<string, string>> = {
     'boats.ceramic': 'Керамическое покрытие',
     'boats.ceramicDesc': 'Долговременная керамическая защита для морских условий. Защищает от УФ, соли и воды на годы.',
     'boats.bookBoat': 'Записаться на лодку',
-
     'stats.time': 'Среднее время ремонта',
     'stats.mobile': 'Мобильный сервис',
-
     'services.label': 'Что мы делаем',
     'services.title': 'Мобильный ремонт и детейлинг',
     'services.desc': 'Мы привозим профессиональное оборудование к вам. Быстро, качественно — без поездки в мастерскую. Авто и лодки.',
@@ -296,7 +255,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'services.mobileDesc': 'Мы приедем к вам домой, в офис или в любое место в Orange County. Полный профессиональный набор — никуда ехать не нужно.',
     'services.headlight': 'Восстановление фар',
     'services.headlightDesc': 'Кристально чистые фары менее чем за час. Убираем помутнение, желтизну и окисление для лучшей видимости.',
-
     'how.label': 'Как это работает',
     'how.title': '4 простых шага к идеальному авто',
     'how.desc': 'Отремонтировать машину ещё никогда не было так просто. Мы делаем всё — вы просто наслаждаетесь результатом.',
@@ -308,18 +266,15 @@ export const translations: Record<Lang, Record<string, string>> = {
     'how.step3Desc': 'Наши мастера устранят царапины, потёртости и отполируют авто на месте.',
     'how.step4': 'Уезжайте на идеальном авто',
     'how.step4Desc': 'Осмотрите результат, наслаждайтесь блеском и продолжайте свой день. Всё просто.',
-
     'mobileCta.label': 'Мы приезжаем к вам',
     'mobileCta.title': 'Никаких поездок в мастерскую — мы на 100% мобильны',
     'mobileCta.desc': 'Не тратьте время на дорогу в автосервис. Наш полностью оборудованный мобильный сервис приедет к вам домой, в офис или куда удобно в Orange County.',
     'mobileCta.schedule': 'Записаться на визит',
     'mobileCta.seeAll': 'Все услуги',
-
     'reviews.label': 'Отзывы клиентов',
     'reviews.title': 'Что говорят наши клиенты',
     'reviews.desc': 'Реальные отзывы владельцев авто и лодок из Orange County, которые ценят наш мобильный сервис.',
     'reviews.readAll': 'Все отзывы',
-
     'guarantees.label': 'Наши гарантии',
     'guarantees.title': 'Почему выбирают R.A.D. US?',
     'guarantees.desc': 'Мы привозим мастерскую к вам — с результатами, которые превосходят ожидания.',
@@ -331,13 +286,10 @@ export const translations: Record<Lang, Record<string, string>> = {
     'guarantees.satisfactionDesc': 'Не довольны результатом? Переделаем бесплатно. Ваше удовлетворение — на первом месте.',
     'guarantees.freeEstimate': 'Бесплатный эстимейт',
     'guarantees.freeEstimateDesc': 'Пришлите фото или опишите проблему — мы дадим бесплатную оценку стоимости за минуты.',
-
     'finalCta.title1': 'Царапины, потёртости, разводы?',
     'finalCta.title2': 'Исправим — прямо у вашей двери.',
     'finalCta.desc': 'Запишитесь на мобильный ремонт сегодня. Быстрый отклик, экспертный сервис и результат. Бесплатный эстимейт!',
-
     'qr.title': 'Сканируйте, чтобы перейти на наш сайт',
-
     'gallery.title': 'Наша галерея',
     'gallery.desc': 'Реальные результаты до и после от нашего мобильного сервиса по Orange County. Каждый ремонт выполнен на месте у клиента.',
     'gallery.all': 'Все',
@@ -351,7 +303,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'gallery.ctaTitle1': 'Хотите такой же результат для',
     'gallery.ctaTitle2': 'вашего авто?',
     'gallery.ctaDesc': 'Мы приедем к вам и обеспечим такой же профессиональный результат. Записывайтесь на мобильный сервис.',
-
     'servicesPage.badge': '100% мобильный — мы приезжаем к вам',
     'servicesPage.title': 'Наши услуги',
     'servicesPage.desc': 'От быстрого ремонта царапин до полировки и керамики — всё выполняется у вас на месте. Авто и лодки.',
@@ -379,7 +330,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'servicesPage.notSure': 'Не уверены, какая услуга вам нужна?',
     'servicesPage.notSureDesc': 'Пришлите фото повреждения или опишите проблему — мы дадим бесплатный эстимейт за минуты.',
     'servicesPage.getFreeQuote': 'Бесплатный эстимейт',
-
     'ceramicPage.badge': 'Мобильное нанесение — мы приедем к вам',
     'ceramicPage.title1': 'Профессиональное',
     'ceramicPage.title2': 'Керамическое покрытие',
@@ -387,7 +337,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'ceramicPage.desc': 'Защитите автомобиль или лодку с премиальным мобильным сервисом керамического покрытия в Orange County. Премиум-продукты и профессиональный результат. До 10 лет защиты.',
     'ceramicPage.getFreeQuote': 'Бесплатный эстимейт',
     'ceramicPage.viewPackages': 'Смотреть пакеты',
-
     'reviewsPage.title': 'Отзывы клиентов',
     'reviewsPage.desc': 'Не верьте нам на слово. Вот что говорят жители Orange County о нашем мобильном сервисе.',
     'reviewsPage.basedOn': 'На основе 200+ отзывов',
@@ -395,7 +344,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'reviewsPage.ctaTitle1': 'Присоединяйтесь к сотням',
     'reviewsPage.ctaTitle2': 'довольных клиентов',
     'reviewsPage.ctaDesc': 'Оцените удобство мобильного сервиса, который приезжает к вам. Записывайтесь и убедитесь, почему мы — #1 в Orange County.',
-
     'aboutPage.label': 'О нас',
     'aboutPage.title1': 'История',
     'aboutPage.title2': 'R.A.D. US',
@@ -425,7 +373,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'aboutPage.doorstepDesc': 'Доверьте авто или лодку самым опытным мобильным мастерам Orange County. Бесплатный эстимейт!',
     'aboutPage.bookMobile': 'Записаться на выезд',
     'aboutPage.viewServices': 'Все услуги',
-
     'contactPage.title1': 'Запишитесь на',
     'contactPage.title2': 'ремонт',
     'contactPage.desc': 'Готовы дать вашему авто или лодке премиальный уход? Заполните форму или свяжитесь напрямую. Бесплатный эстимейт! Обычно отвечаем в течение 1 часа.',
@@ -456,9 +403,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'contactPage.respond': 'Мы свяжемся с вами в течение 1 часа в рабочее время.',
     'contactPage.another': 'Отправить ещё',
     'contactPage.faqTitle': 'Частые вопросы',
-
     'topbar.text': 'Пишите в WhatsApp: (916) 917-3541',
-
     'footer.desc': 'R.A.D. US — Real Auto Detailing. Надёжный мобильный сервис ремонта царапин и детейлинга авто и лодок в Orange County. Бесплатный эстимейт!',
     'footer.quickLinks': 'Быстрые ссылки',
     'footer.servicesTitle': 'Услуги',
@@ -483,7 +428,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'nav.about': 'Nosotros',
     'nav.contact': 'Contacto',
     'nav.bookNow': 'Reservar',
-
     'home.badge': 'Vamos a ti — Servicio móvil en todo Orange County',
     'home.title1': 'Reparación móvil',
     'home.title2': 'de rayones y',
@@ -493,7 +437,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'home.mobileService': '100% servicio móvil',
     'home.sameDay': 'Citas el mismo día',
     'home.freeEstimate': 'Presupuesto gratis',
-
     'boats.label': 'Detallado de botes',
     'boats.title': 'También trabajamos con botes y yates',
     'boats.desc': 'Los mismos servicios profesionales de reparación de rayones, pulido y recubrimiento cerámico — ahora para tu bote. Vamos a tu marina o muelle en todo Orange County.',
@@ -504,10 +447,8 @@ export const translations: Record<Lang, Record<string, string>> = {
     'boats.ceramic': 'Recubrimiento cerámico',
     'boats.ceramicDesc': 'Protección cerámica duradera diseñada para ambientes marinos. Protege contra UV, sal y daños por agua durante años.',
     'boats.bookBoat': 'Reservar servicio para bote',
-
     'stats.time': 'Tiempo promedio de reparación',
     'stats.mobile': 'Servicio móvil',
-
     'services.label': 'Lo que hacemos',
     'services.title': 'Servicios de reparación y detallado móvil',
     'services.desc': 'Llevamos equipo profesional a tu ubicación. Resultados rápidos e impecables — sin ir al taller. Autos y botes.',
@@ -523,7 +464,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'services.mobileDesc': 'Vamos a tu casa, oficina o cualquier lugar en Orange County. Configuración profesional completa — no necesitas conducir.',
     'services.headlight': 'Restauración de faros',
     'services.headlightDesc': 'Faros cristalinos en menos de una hora. Eliminamos la opacidad, el amarillamiento y la oxidación.',
-
     'how.label': 'Cómo funciona',
     'how.title': '4 pasos simples para un auto perfecto',
     'how.desc': 'Reparar tu auto nunca fue tan fácil. Nosotros nos encargamos de todo — tú solo disfruta los resultados.',
@@ -535,18 +475,15 @@ export const translations: Record<Lang, Record<string, string>> = {
     'how.step3Desc': 'Nuestros técnicos reparan rayones, rozaduras y pulen tu vehículo en el momento.',
     'how.step4': 'Conduce un auto perfecto',
     'how.step4Desc': 'Inspecciona los resultados, disfruta el brillo y continúa tu día. Así de simple.',
-
     'mobileCta.label': 'Vamos a ti',
     'mobileCta.title': 'Sin ir al taller — somos 100% móviles',
     'mobileCta.desc': 'No pierdas tiempo conduciendo al taller. Nuestra unidad móvil va a tu casa, oficina o cualquier lugar en Orange County.',
     'mobileCta.schedule': 'Agendar una visita',
     'mobileCta.seeAll': 'Ver todos los servicios',
-
     'reviews.label': 'Testimonios de clientes',
     'reviews.title': 'Lo que dicen nuestros clientes',
     'reviews.desc': 'Opiniones reales de propietarios de vehículos en Orange County que valoran nuestro servicio móvil.',
     'reviews.readAll': 'Ver todas las reseñas',
-
     'guarantees.label': 'Nuestra promesa',
     'guarantees.title': '¿Por qué elegir R.A.D. US?',
     'guarantees.desc': 'Llevamos el taller a ti — con resultados que superan las expectativas.',
@@ -558,13 +495,10 @@ export const translations: Record<Lang, Record<string, string>> = {
     'guarantees.satisfactionDesc': '¿No estás contento con los resultados? Rehacemos el servicio sin costo adicional.',
     'guarantees.freeEstimate': 'Presupuesto gratis',
     'guarantees.freeEstimateDesc': 'Envíanos una foto o describe el problema — te daremos un presupuesto gratis en minutos.',
-
     'finalCta.title1': '¿Rayones, rozaduras, marcas?',
     'finalCta.title2': 'Lo reparamos — en tu puerta.',
     'finalCta.desc': 'Reserva tu cita de reparación móvil hoy. Respuesta rápida, servicio experto y resultados visibles. ¡Presupuesto gratis!',
-
     'qr.title': 'Escanea para visitar nuestro sitio web',
-
     'gallery.title': 'Nuestra galería',
     'gallery.desc': 'Resultados reales de antes y después de nuestro servicio móvil en Orange County. Cada reparación hecha en la ubicación del cliente.',
     'gallery.all': 'Todos',
@@ -578,7 +512,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'gallery.ctaTitle1': '¿Quieres estos resultados para',
     'gallery.ctaTitle2': 'tu vehículo?',
     'gallery.ctaDesc': 'Iremos a tu ubicación y entregaremos los mismos resultados profesionales. Reserva tu servicio móvil hoy.',
-
     'servicesPage.badge': '100% móvil — vamos a ti',
     'servicesPage.title': 'Nuestros servicios',
     'servicesPage.desc': 'Desde reparación rápida de rayones hasta pulido completo y cerámica — todo en tu ubicación. Autos y botes.',
@@ -606,7 +539,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'servicesPage.notSure': '¿No estás seguro qué servicio necesitas?',
     'servicesPage.notSureDesc': 'Envíanos una foto del daño o describe el problema — te daremos un presupuesto gratis en minutos.',
     'servicesPage.getFreeQuote': 'Presupuesto gratis',
-
     'ceramicPage.badge': 'Aplicación móvil — vamos a ti',
     'ceramicPage.title1': 'Recubrimiento',
     'ceramicPage.title2': 'cerámico profesional',
@@ -614,7 +546,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'ceramicPage.desc': 'Protege tu vehículo o bote con el servicio móvil premium de recubrimiento cerámico en Orange County. Productos premium y resultados profesionales. Hasta 10 años de protección.',
     'ceramicPage.getFreeQuote': 'Presupuesto gratis',
     'ceramicPage.viewPackages': 'Ver paquetes',
-
     'reviewsPage.title': 'Reseñas de clientes',
     'reviewsPage.desc': 'No solo confíes en nosotros. Esto es lo que dicen los residentes de Orange County sobre nuestro servicio móvil.',
     'reviewsPage.basedOn': 'Basado en 200+ reseñas',
@@ -622,7 +553,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'reviewsPage.ctaTitle1': 'Únete a cientos de',
     'reviewsPage.ctaTitle2': 'clientes satisfechos',
     'reviewsPage.ctaDesc': 'Experimenta la comodidad del servicio móvil que va a ti. Reserva tu cita y descubre por qué somos el #1 en Orange County.',
-
     'aboutPage.label': 'Sobre nosotros',
     'aboutPage.title1': 'La historia de',
     'aboutPage.title2': 'R.A.D. US',
@@ -652,7 +582,6 @@ export const translations: Record<Lang, Record<string, string>> = {
     'aboutPage.doorstepDesc': 'Confía tu vehículo o bote a los profesionales móviles más experimentados de Orange County. ¡Presupuesto gratis!',
     'aboutPage.bookMobile': 'Reservar servicio móvil',
     'aboutPage.viewServices': 'Ver nuestros servicios',
-
     'contactPage.title1': 'Reserva tu',
     'contactPage.title2': 'reparación',
     'contactPage.desc': '¿Listo para darle a tu vehículo o bote el cuidado premium que merece? Completa el formulario o contáctanos directamente. ¡Presupuesto gratis! Normalmente respondemos en 1 hora.',
@@ -683,9 +612,7 @@ export const translations: Record<Lang, Record<string, string>> = {
     'contactPage.respond': 'Te responderemos en 1 hora durante horario laboral.',
     'contactPage.another': 'Enviar otra solicitud',
     'contactPage.faqTitle': 'Preguntas frecuentes',
-
     'topbar.text': 'Escríbenos por WhatsApp: (916) 917-3541',
-
     'footer.desc': 'R.A.D. US — Real Auto Detailing. El servicio móvil de confianza para reparación de rayones y detallado de autos y botes en Orange County. ¡Presupuesto gratis!',
     'footer.quickLinks': 'Enlaces rápidos',
     'footer.servicesTitle': 'Servicios',

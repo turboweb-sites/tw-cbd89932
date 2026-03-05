@@ -43,7 +43,7 @@ export default function Home() {
   ];
 
   const reviews = [
-    { name: 'Michael T.', text: 'They came to my office parking lot and removed three deep scratches from my door panel. Took about an hour and you can\'t even tell they were there. Incredible mobile service!', rating: 5 },
+    { name: 'Michael T.', text: "They came to my office parking lot and removed three deep scratches from my door panel. Took about an hour and you can't even tell they were there. Incredible mobile service!", rating: 5 },
     { name: 'Sarah K.', text: 'Best mobile detailing in Orange County. They polished my entire car in my driveway and the paint looks absolutely flawless now. So convenient!', rating: 5 },
     { name: 'David R.', text: 'Had paint damage from a shopping cart ding. They fixed it on-site at my house in under 2 hours. The repair is invisible. Highly recommended!', rating: 5 },
   ];
@@ -76,7 +76,7 @@ export default function Home() {
 
             <div className="mb-4">
               <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-wider leading-none">
-                R.A.D.{' '}<span className="text-gradient">US</span>
+                R.A.D. <span className="text-gradient">US</span>
               </h1>
               <p className="text-primary-400 text-sm sm:text-base font-semibold tracking-[0.25em] uppercase mt-2">
                 Real Auto Detailing
@@ -85,7 +85,7 @@ export default function Home() {
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-6 mt-6">
               {t('home.title1')}<br />
-              {t('home.title2')}{' '}<span className="text-gradient">{t('home.title3')}</span>
+              {t('home.title2')} <span className="text-gradient">{t('home.title3')}</span>
             </h2>
 
             <p className="text-lg sm:text-xl text-dark-200 mb-10 max-w-xl leading-relaxed">
@@ -244,7 +244,7 @@ export default function Home() {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-4">
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-wider mb-3">
-              R.A.D.{' '}<span className="text-gradient">US</span>
+              R.A.D. <span className="text-gradient">US</span>
             </h2>
             <p className="text-primary-400 text-sm sm:text-base font-semibold tracking-[0.25em] uppercase">
               Real Auto Detailing

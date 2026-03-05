@@ -15,59 +15,6 @@ import { useLanguage } from '../LanguageContext';
 export default function Services() {
   const { t } = useLanguage();
 
-  const packages = [
-    {
-      name: t('servicesPage.quickFix'),
-      price: t('servicesPage.quickFixPrice'),
-      duration: t('servicesPage.quickFixDuration'),
-      description: t('servicesPage.quickFixDesc'),
-      features: [
-        'Surface scratch removal (up to 3 panels)',
-        'Scuff repair & spot polishing',
-        'Paint sealant on repaired areas',
-        'Comes to your location',
-        'Same-day service available',
-      ],
-      popular: false,
-    },
-    {
-      name: t('servicesPage.fullRestore'),
-      price: t('servicesPage.fullRestorePrice'),
-      duration: t('servicesPage.fullRestoreDuration'),
-      description: t('servicesPage.fullRestoreDesc'),
-      features: [
-        'Full exterior decontamination',
-        'Clay bar treatment',
-        'Two-stage polishing',
-        'Scratch & swirl mark removal',
-        'Machine polishing all panels',
-        '6-month paint sealant',
-        'Headlight restoration included',
-        'Tire & wheel detailing',
-      ],
-      popular: true,
-    },
-    {
-      name: t('servicesPage.ultimate'),
-      price: t('servicesPage.ultimatePrice'),
-      duration: t('servicesPage.ultimateDuration'),
-      description: t('servicesPage.ultimateDesc'),
-      features: [
-        'Full paint decontamination',
-        'Multi-stage polishing',
-        'Deep scratch repair',
-        '2-year ceramic coating',
-        'Interior deep clean & sanitize',
-        'Headlight restoration',
-        'Trim restoration',
-        'Glass coating',
-        'Wheel ceramic coating',
-        'Maintenance kit included',
-      ],
-      popular: false,
-    },
-  ];
-
   const serviceDetails = [
     {
       icon: Zap,
@@ -134,33 +81,6 @@ export default function Services() {
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6"><span className="text-gradient">{t('servicesPage.title')}</span></h1>
           <p className="text-dark-200 text-lg max-w-2xl mx-auto">{t('servicesPage.desc')}</p>
-        </div>
-      </section>
-
-      <section className="py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionTitle label={t('servicesPage.packagesLabel')} title={t('servicesPage.packagesTitle')} description={t('servicesPage.packagesDesc')} />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {packages.map((pkg) => (
-              <div key={pkg.name} className={`relative rounded-2xl p-8 transition-all duration-300 ${pkg.popular ? 'bg-gradient-to-b from-primary-500/10 to-dark-900 border-2 border-primary-500/50 scale-[1.02]' : 'glass-card hover:border-white/20'}`}>
-                {pkg.popular && (<div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary-500 to-primary-700 text-dark-900 px-6 py-1.5 rounded-full text-sm font-bold">{t('servicesPage.mostPopular')}</div>)}
-                <div className="mb-6">
-                  <h3 className="text-2xl font-bold text-white mb-2">{pkg.name}</h3>
-                  <p className="text-dark-300 text-sm">{pkg.description}</p>
-                </div>
-                <div className="mb-6">
-                  <span className="text-4xl font-black text-primary-500">{pkg.price}</span>
-                  <span className="text-dark-400 text-sm ml-2">/ {pkg.duration}</span>
-                </div>
-                <ul className="space-y-3 mb-8">
-                  {pkg.features.map((feature) => (
-                    <li key={feature} className="flex items-start gap-3 text-sm text-dark-200"><Check size={16} className="text-primary-500 mt-0.5 shrink-0" />{feature}</li>
-                  ))}
-                </ul>
-                <CTAButton href="/contact" variant={pkg.popular ? 'primary' : 'outline'} className="w-full justify-center">{t('servicesPage.bookPackage')}</CTAButton>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 

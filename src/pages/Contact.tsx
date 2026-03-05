@@ -113,7 +113,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="text-white font-semibold mb-1">Instagram</h4>
-                      <a href="https://instagram.com/RAD_US" target="_blank" rel="noopener noreferrer" className="text-dark-300 hover:text-pink-400 transition-colors text-sm">@RAD_US</a>
+                      <a href="https://www.instagram.com/r.a.d._us" target="_blank" rel="noopener noreferrer" className="text-dark-300 hover:text-pink-400 transition-colors text-sm">@r.a.d._us</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -122,7 +122,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="text-white font-semibold mb-1">Facebook</h4>
-                      <a href="https://facebook.com/RADUS" target="_blank" rel="noopener noreferrer" className="text-dark-300 hover:text-blue-400 transition-colors text-sm">RAD US</a>
+                      <a href="https://www.facebook.com/profile.php?id=61587611498426" target="_blank" rel="noopener noreferrer" className="text-dark-300 hover:text-blue-400 transition-colors text-sm">R.A.D. US</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">

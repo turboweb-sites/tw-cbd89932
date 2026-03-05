@@ -50,17 +50,25 @@ export default function Gallery() {
     { key: 'Boat Detailing', label: t('gallery.boatDetailing') },
   ];
 
-  const filtered = activeCategory === 'All' ? galleryItems : galleryItems.filter((item) => item.category === activeCategory);
+  const filtered = activeCategory === 'All'
+    ? galleryItems
+    : galleryItems.filter((item) => item.category === activeCategory);
 
   return (
     <>
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?w=1920&h=600&fit=crop" alt="Auto detailing gallery" className="w-full h-full object-cover" />
+          <img
+            src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?w=1920&h=600&fit=crop"
+            alt="Auto detailing gallery"
+            className="w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-dark-950/90" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6"><span className="text-gradient">{t('gallery.title')}</span></h1>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
+            <span className="text-gradient">{t('gallery.title')}</span>
+          </h1>
           <p className="text-dark-200 text-lg max-w-2xl mx-auto">{t('gallery.desc')}</p>
         </div>
       </section>
@@ -69,20 +77,47 @@ export default function Gallery() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-center gap-3 mb-12">
             {categories.map((cat) => (
-              <button key={cat.key} onClick={() => setActiveCategory(cat.key)} className={`px-6 py-2.5 rounded-xl text-sm font-medium transition-all ${activeCategory === cat.key ? 'bg-primary-500 text-dark-900' : 'bg-white/5 text-dark-200 hover:bg-white/10 border border-white/10'}`}>{cat.label}</button>
+              <button
+                key={cat.key}
+                onClick={() => setActiveCategory(cat.key)}
+                className={`px-6 py-2.5 rounded-xl text-sm font-medium transition-all ${
+                  activeCategory === cat.key
+                    ? 'bg-primary-500 text-dark-900'
+                    : 'bg-white/5 text-dark-200 hover:bg-white/10 border border-white/10'
+                }`}
+              >
+                {cat.label}
+              </button>
             ))}
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {filtered.map((item, index) => (
-              <div key={index} className="glass-card overflow-hidden group cursor-pointer" onClick={() => setLightbox(index)}>
+              <div
+                key={index}
+                className="glass-card overflow-hidden group cursor-pointer"
+                onClick={() => setLightbox(index)}
+              >
                 <div className="grid grid-cols-2">
                   <div className="relative">
-                    <img src={item.before} alt="Before" className="w-full h-48 sm:h-64 object-cover" />
-                    <span className="absolute bottom-2 left-2 bg-dark-900/80 text-white text-xs px-3 py-1 rounded-full">{t('gallery.before')}</span>
+                    <img
+                      src={item.before}
+                      alt="Before"
+                      className="w-full h-48 sm:h-64 object-cover"
+                    />
+                    <span className="absolute bottom-2 left-2 bg-dark-900/80 text-white text-xs px-3 py-1 rounded-full">
+                      {t('gallery.before')}
+                    </span>
                   </div>
                   <div className="relative">
-                    <img src={item.after} alt="After" className="w-full h-48 sm:h-64 object-cover" />
-                    <span className="absolute bottom-2 right-2 bg-primary-500/90 text-dark-900 text-xs px-3 py-1 rounded-full font-semibold">{t('gallery.after')}</span>
+                    <img
+                      src={item.after}
+                      alt="After"
+                      className="w-full h-48 sm:h-64 object-cover"
+                    />
+                    <span className="absolute bottom-2 right-2 bg-primary-500/90 text-dark-900 text-xs px-3 py-1 rounded-full font-semibold">
+                      {t('gallery.after')}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -93,13 +128,42 @@ export default function Gallery() {
 
       {lightbox !== null && (
         <div className="fixed inset-0 z-50 bg-dark-950/95 flex items-center justify-center p-4">
-          <button onClick={() => setLightbox(null)} className="absolute top-6 right-6 text-white hover:text-primary-400 transition-colors"><X size={32} /></button>
-          <button onClick={() => setLightbox(Math.max(0, lightbox - 1))} className="absolute left-4 text-white hover:text-primary-400 transition-colors"><ChevronLeft size={40} /></button>
-          <button onClick={() => setLightbox(Math.min(filtered.length - 1, lightbox + 1))} className="absolute right-4 text-white hover:text-primary-400 transition-colors"><ChevronRight size={40} /></button>
+          <button
+            onClick={() => setLightbox(null)}
+            className="absolute top-6 right-6 text-white hover:text-primary-400 transition-colors"
+          >
+            <X size={32} />
+          </button>
+          <button
+            onClick={() => setLightbox(Math.max(0, lightbox - 1))}
+            className="absolute left-4 text-white hover:text-primary-400 transition-colors"
+          >
+            <ChevronLeft size={40} />
+          </button>
+          <button
+            onClick={() => setLightbox(Math.min(filtered.length - 1, lightbox + 1))}
+            className="absolute right-4 text-white hover:text-primary-400 transition-colors"
+          >
+            <ChevronRight size={40} />
+          </button>
           <div className="max-w-5xl w-full">
             <div className="grid grid-cols-2 gap-4">
-              <div><img src={filtered[lightbox].before} alt="Before" className="w-full rounded-xl" /><p className="text-center text-dark-300 text-sm mt-2">{t('gallery.before')}</p></div>
-              <div><img src={filtered[lightbox].after} alt="After" className="w-full rounded-xl" /><p className="text-center text-primary-400 text-sm mt-2">{t('gallery.after')}</p></div>
+              <div>
+                <img
+                  src={filtered[lightbox].before}
+                  alt="Before"
+                  className="w-full rounded-xl"
+                />
+                <p className="text-center text-dark-300 text-sm mt-2">{t('gallery.before')}</p>
+              </div>
+              <div>
+                <img
+                  src={filtered[lightbox].after}
+                  alt="After"
+                  className="w-full rounded-xl"
+                />
+                <p className="text-center text-primary-400 text-sm mt-2">{t('gallery.after')}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -107,9 +171,14 @@ export default function Gallery() {
 
       <section className="py-24 bg-dark-900/50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">{t('gallery.ctaTitle1')}{' '}<span className="text-gradient">{t('gallery.ctaTitle2')}</span></h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+            {t('gallery.ctaTitle1')}{' '}
+            <span className="text-gradient">{t('gallery.ctaTitle2')}</span>
+          </h2>
           <p className="text-dark-200 text-lg mb-8">{t('gallery.ctaDesc')}</p>
-          <CTAButton href="/contact" variant="primary" size="lg">{t('home.bookMobile')}</CTAButton>
+          <CTAButton href="/contact" variant="primary" size="lg">
+            {t('home.bookMobile')}
+          </CTAButton>
         </div>
       </section>
     </>
