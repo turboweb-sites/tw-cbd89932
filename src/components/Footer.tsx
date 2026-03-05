@@ -3,6 +3,8 @@ import { Phone, Mail, MapPin, Clock, Instagram, Facebook, ArrowUpRight, MessageC
 import { QRCodeSVG } from 'qrcode.react';
 import { useLanguage } from '../LanguageContext';
 
+const LOGO_URL = 'https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/4a3a8266-ff3c-49e0-92ff-ce05f4990589/media__1__1772751803275_rea8z1.webp';
+
 export default function Footer() {
   const { t } = useLanguage();
 
@@ -31,8 +33,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary-400 to-primary-700 rounded-lg flex items-center justify-center">
-                <span className="text-dark-900 font-black text-lg">R</span>
+              <div className="w-11 h-11 rounded-xl overflow-hidden bg-dark-800 flex items-center justify-center shrink-0">
+                <img
+                  src={LOGO_URL}
+                  alt="R.A.D. US Logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <span className="text-xl font-black tracking-wider">

@@ -69,9 +69,14 @@ export default function Services() {
 
   return (
     <>
+      {/* Hero — фото полировки авто / мобильный сервис */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1520340356584-f9166066d716?w=1920&h=600&fit=crop" alt="Mobile auto detailing services" className="w-full h-full object-cover" />
+          <img
+            src="https://images.unsplash.com/photo-1632823471565-1ecdf5c6da24?w=1920&h=600&fit=crop"
+            alt="Professional car polishing"
+            className="w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-dark-950/90" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -84,6 +89,7 @@ export default function Services() {
         </div>
       </section>
 
+      {/* All Services */}
       <section className="py-24 bg-dark-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle label={t('servicesPage.detailLabel')} title={t('servicesPage.detailTitle')} description={t('servicesPage.detailDesc')} />
@@ -107,7 +113,10 @@ export default function Services() {
                     <h4 className="text-white font-semibold text-sm uppercase tracking-widest mb-4">{t('servicesPage.whatsIncluded')}</h4>
                     <ul className="space-y-2">
                       {service.includes.map((item) => (
-                        <li key={item} className="flex items-start gap-2 text-dark-200 text-sm"><Check size={14} className="text-primary-500 mt-0.5 shrink-0" />{item}</li>
+                        <li key={item} className="flex items-start gap-2 text-dark-200 text-sm">
+                          <Check size={14} className="text-primary-500 mt-0.5 shrink-0" />
+                          {item}
+                        </li>
                       ))}
                     </ul>
                   </div>
@@ -118,6 +127,7 @@ export default function Services() {
         </div>
       </section>
 
+      {/* CTA */}
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">{t('servicesPage.notSure')}</h2>

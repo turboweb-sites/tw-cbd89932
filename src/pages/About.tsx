@@ -24,9 +24,14 @@ export default function About() {
 
   return (
     <>
+      {/* Hero — реальное фото полировки машины крупным планом */}
       <section className="relative pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=1920&h=800&fit=crop" alt="R.A.D. US mobile service" className="w-full h-full object-cover" />
+          <img
+            src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=1920&h=800&fit=crop"
+            alt="Professional auto detailing"
+            className="w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-dark-950/85" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,6 +45,7 @@ export default function About() {
         </div>
       </section>
 
+      {/* Story — используем реальное фото из галереи */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -53,12 +59,17 @@ export default function About() {
               </div>
             </div>
             <div className="relative">
-              <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=600&h=700&fit=crop" alt="Mobile detailing professional" className="rounded-2xl w-full object-cover" />
+              <img
+                src="https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/6632dda3-f092-48bf-a7d8-de1ff60e1cf0/Screenshot_2026_03_05_150904_1772752152935_d4ii2c.webp"
+                alt="R.A.D. US mobile detailing at work"
+                className="rounded-2xl w-full object-cover"
+              />
             </div>
           </div>
         </div>
       </section>
 
+      {/* Values */}
       <section className="py-24 bg-dark-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle label={t('aboutPage.valuesLabel')} title={t('aboutPage.valuesTitle')} description={t('aboutPage.valuesDesc')} />
@@ -76,6 +87,7 @@ export default function About() {
         </div>
       </section>
 
+      {/* Certifications — реальные фото результатов из галереи */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -91,15 +103,32 @@ export default function About() {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=400&h=300&fit=crop" alt="Detailed vehicle" className="rounded-2xl object-cover w-full h-48" />
-              <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=400&h=300&fit=crop" alt="Polishing results" className="rounded-2xl object-cover w-full h-48 mt-8" />
-              <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=400&h=300&fit=crop" alt="Ceramic coating" className="rounded-2xl object-cover w-full h-48" />
-              <img src="https://images.unsplash.com/photo-1471479917193-f00955256257?w=400&h=300&fit=crop" alt="Mobile workspace" className="rounded-2xl object-cover w-full h-48 mt-8" />
+              <img
+                src="https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/d458f618-217b-4ec1-bd70-41c7125feefb/IMG_0905_1772555190849_d2izl8.webp"
+                alt="Mirror finish polishing result"
+                className="rounded-2xl object-cover w-full h-48"
+              />
+              <img
+                src="https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/d535ea1e-b273-4f29-84d1-de60932ddda8/IMG_0902_1772555170259_jrsyk1.webp"
+                alt="Panel scratch repair"
+                className="rounded-2xl object-cover w-full h-48 mt-8"
+              />
+              <img
+                src="https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/56528d20-2910-482f-8e8f-77d3cb28d64c/IMG_0903_1772555174113_wz60th.webp"
+                alt="Deep key scratch removal"
+                className="rounded-2xl object-cover w-full h-48"
+              />
+              <img
+                src="https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/1423a6b4-1de8-46fa-8492-b4ba69bcb93c/IMG_0896_1772555150450_b4f458.webp"
+                alt="Bumper scuff repair"
+                className="rounded-2xl object-cover w-full h-48 mt-8"
+              />
             </div>
           </div>
         </div>
       </section>
 
+      {/* Stats */}
       <section className="py-24 bg-dark-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-2 gap-8 text-center">
@@ -116,6 +145,7 @@ export default function About() {
         </div>
       </section>
 
+      {/* CTA */}
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">

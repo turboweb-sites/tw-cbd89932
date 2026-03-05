@@ -217,14 +217,18 @@ export default function Contact() {
                           <label className="block text-dark-200 text-sm font-medium mb-2">{t('contactPage.serviceNeeded')}</label>
                           <select name="service" value={formData.service} onChange={handleChange} required className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-colors appearance-none">
                             <option value="" className="bg-dark-800">{t('contactPage.selectService')}</option>
-                            {serviceOptions.map((s) => (<option key={s} value={s} className="bg-dark-800">{s}</option>))}
+                            {serviceOptions.map((s) => (
+                              <option key={s} value={s} className="bg-dark-800">{s}</option>
+                            ))}
                           </select>
                         </div>
                         <div>
                           <label className="block text-dark-200 text-sm font-medium mb-2">{t('contactPage.vehicleType')}</label>
                           <select name="vehicleType" value={formData.vehicleType} onChange={handleChange} className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-colors appearance-none">
                             <option value="" className="bg-dark-800">{t('contactPage.selectVehicle')}</option>
-                            {vehicleTypes.map((v) => (<option key={v} value={v} className="bg-dark-800">{v}</option>))}
+                            {vehicleTypes.map((v) => (
+                              <option key={v} value={v} className="bg-dark-800">{v}</option>
+                            ))}
                           </select>
                         </div>
                       </div>

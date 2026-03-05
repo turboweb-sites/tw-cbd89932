@@ -18,6 +18,8 @@ import CTAButton from '../components/CTAButton';
 import SectionTitle from '../components/SectionTitle';
 import { useLanguage } from '../LanguageContext';
 
+const LOGO_URL = 'https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/4a3a8266-ff3c-49e0-92ff-ce05f4990589/media__1__1772751803275_rea8z1.webp';
+
 export default function Home() {
   const { t } = useLanguage();
 
@@ -55,12 +57,12 @@ export default function Home() {
 
   return (
     <>
-      {/* HERO */}
+      {/* Hero — реальное фото полировки авто */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=1920&h=1080&fit=crop"
-            alt="Car detailing"
+            src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=1920&h=1080&fit=crop"
+            alt="Premium car close-up"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-dark-950 via-dark-950/90 to-dark-950/50" />
@@ -74,13 +76,22 @@ export default function Home() {
               <span className="text-primary-400 text-sm font-medium">{t('home.badge')}</span>
             </div>
 
-            <div className="mb-4">
-              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-wider leading-none">
-                R.A.D. <span className="text-gradient">US</span>
-              </h1>
-              <p className="text-primary-400 text-sm sm:text-base font-semibold tracking-[0.25em] uppercase mt-2">
-                Real Auto Detailing
-              </p>
+            <div className="mb-4 flex items-center gap-5">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden bg-dark-800 shrink-0 shadow-lg shadow-black/30">
+                <img
+                  src={LOGO_URL}
+                  alt="R.A.D. US Logo"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-wider leading-none">
+                  R.A.D. <span className="text-gradient">US</span>
+                </h1>
+                <p className="text-primary-400 text-sm sm:text-base font-semibold tracking-[0.25em] uppercase mt-2">
+                  Real Auto Detailing
+                </p>
+              </div>
             </div>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-6 mt-6">
@@ -128,7 +139,7 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-dark-950 to-transparent" />
       </section>
 
-      {/* STATS BAR */}
+      {/* Stats */}
       <section className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="glass-card p-8 grid grid-cols-2 gap-8">
           {stats.map((stat) => (
@@ -140,7 +151,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SERVICES */}
+      {/* Services */}
       <section className="py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
@@ -169,7 +180,58 @@ export default function Home() {
         </div>
       </section>
 
-      {/* BOAT DETAILING SECTION */}
+      {/* Before / After showcase — используем загруженные фото */}
+      <section className="py-24 bg-dark-900/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionTitle
+            label="Real Results"
+            title="Before & After"
+            description="See the difference our mobile service makes — real photos from our clients."
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="rounded-2xl overflow-hidden border border-white/5 hover:border-primary-500/30 transition-all duration-500">
+              <img
+                src="https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/bc6d1cc5-5f11-4ad7-97f0-e973cdaad7f8/IMG_0894_1772555143768_e4uk8j.webp"
+                alt="Scratch repair before and after"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4 bg-dark-800/50">
+                <span className="text-primary-400 text-xs font-bold uppercase tracking-widest">Scratch Repair</span>
+                <p className="text-white font-semibold text-sm mt-1">Deep Scratch Removal — Black Sedan</p>
+              </div>
+            </div>
+            <div className="rounded-2xl overflow-hidden border border-white/5 hover:border-primary-500/30 transition-all duration-500">
+              <img
+                src="https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/abe64bf7-531f-4b07-b283-581cfa3557ff/IMG_0904_1772555188774_qqh0fx.webp"
+                alt="Polishing before and after"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4 bg-dark-800/50">
+                <span className="text-primary-400 text-xs font-bold uppercase tracking-widest">Polishing</span>
+                <p className="text-white font-semibold text-sm mt-1">Full Paint Polishing — Swirl Mark Removal</p>
+              </div>
+            </div>
+            <div className="rounded-2xl overflow-hidden border border-white/5 hover:border-primary-500/30 transition-all duration-500">
+              <img
+                src="https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/1b3a20bd-20d7-43ea-9a5e-a9b4e634cb63/IMG_0898_1772555156839_mtzo3a.webp"
+                alt="Boat hull repair before and after"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4 bg-dark-800/50">
+                <span className="text-primary-400 text-xs font-bold uppercase tracking-widest">Boat Detailing</span>
+                <p className="text-white font-semibold text-sm mt-1">Boat Hull Scratch Repair — Gel Coat</p>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-10">
+            <CTAButton href="/gallery" variant="outline">
+              View Full Gallery
+            </CTAButton>
+          </div>
+        </div>
+      </section>
+
+      {/* Boat section — реальные фото лодок */}
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0">
           <img
@@ -201,25 +263,26 @@ export default function Home() {
             ))}
           </div>
 
+          {/* Boat photos — реальные было/стало из галереи + стоковые лодки */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
             <div className="relative overflow-hidden rounded-2xl group">
               <img
-                src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop"
-                alt="Boat polishing"
+                src="https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/dcf7fa2c-0d1a-4454-8132-8bf7b5264c98/IMG_0899_1772555160303_1qe6bd.webp"
+                alt="Boat hull polishing before after"
                 className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-700"
               />
             </div>
             <div className="relative overflow-hidden rounded-2xl group">
               <img
-                src="https://images.unsplash.com/photo-1605281317010-fe5ffe798166?w=600&h=400&fit=crop"
-                alt="Boat service"
+                src="https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/f3131fec-172c-4482-8b27-33af56a76c68/IMG_0900_1772555163504_3xfvhn.webp"
+                alt="Gel coat deep scratch fix"
                 className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-700"
               />
             </div>
             <div className="relative overflow-hidden rounded-2xl group">
               <img
-                src="https://images.unsplash.com/photo-1540946485063-a40da27545f8?w=600&h=400&fit=crop"
-                alt="Boat scratch repair"
+                src="https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/3d91b972-466d-47b0-965b-1525ffd0d2b7/IMG_0901_1772555167082_vsk6mm.webp"
+                alt="Boat surface restoration"
                 className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-700"
               />
             </div>
@@ -233,16 +296,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WIDE PHOTO BREAK */}
+      {/* Brand divider — реальное фото детейлинга */}
       <section className="relative h-[50vh] md:h-[60vh] overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=1920&h=900&fit=crop"
-          alt="Freshly detailed car"
+          src="https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=1920&h=900&fit=crop"
+          alt="Freshly polished car paint"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/30 to-dark-950/60" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-4">
+            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden bg-dark-800 mx-auto mb-4 shadow-lg shadow-black/40">
+              <img
+                src={LOGO_URL}
+                alt="R.A.D. US Logo"
+                className="w-full h-full object-cover"
+              />
+            </div>
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-wider mb-3">
               R.A.D. <span className="text-gradient">US</span>
             </h2>
@@ -253,7 +323,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
+      {/* How it works */}
       <section className="py-24 bg-dark-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
@@ -280,12 +350,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MOBILE SERVICE CTA */}
+      {/* Mobile CTA — фото мобильного сервиса */}
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1920&h=800&fit=crop"
-            alt="Mobile detailing service"
+            src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1920&h=800&fit=crop"
+            alt="Mobile detailing van arriving"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-dark-950/85 backdrop-blur-sm" />
@@ -313,7 +383,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* REVIEWS */}
+      {/* Reviews */}
       <section className="py-24 md:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
@@ -347,7 +417,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* GUARANTEES */}
+      {/* Guarantees */}
       <section className="py-24 bg-dark-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
@@ -374,7 +444,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FINAL CTA */}
+      {/* Final CTA */}
       <section className="py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">

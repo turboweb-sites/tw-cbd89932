@@ -73,11 +73,12 @@ export default function CeramicCoating() {
 
   return (
     <>
+      {/* Hero — фото керамического покрытия на авто */}
       <section className="relative pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=1920&h=800&fit=crop"
-            alt="Ceramic coating Orange County"
+            src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=1920&h=800&fit=crop"
+            alt="Ceramic coating application"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-dark-950/85" />
@@ -110,6 +111,7 @@ export default function CeramicCoating() {
         </div>
       </section>
 
+      {/* Benefits */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
@@ -131,6 +133,7 @@ export default function CeramicCoating() {
         </div>
       </section>
 
+      {/* Process */}
       <section className="py-24 bg-dark-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
@@ -155,6 +158,7 @@ export default function CeramicCoating() {
         </div>
       </section>
 
+      {/* Packages */}
       <section id="packages" className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
@@ -206,6 +210,7 @@ export default function CeramicCoating() {
         </div>
       </section>
 
+      {/* FAQ */}
       <section className="py-24 bg-dark-900/50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle label="FAQ" title="Frequently Asked Questions" />
@@ -228,6 +233,7 @@ export default function CeramicCoating() {
         </div>
       </section>
 
+      {/* CTA */}
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
