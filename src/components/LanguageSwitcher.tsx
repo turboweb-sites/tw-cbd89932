@@ -6,13 +6,13 @@ import { Lang } from '../i18n';
 const langLabels: Record<Lang, string> = {
   en: 'EN',
   ru: 'RU',
-  ua: 'UA',
+  es: 'ES',
 };
 
 const langNames: Record<Lang, string> = {
   en: 'English',
   ru: 'Русский',
-  ua: 'Українська',
+  es: 'Español',
 };
 
 export default function LanguageSwitcher() {

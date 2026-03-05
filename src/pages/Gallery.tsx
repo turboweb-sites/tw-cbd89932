@@ -5,20 +5,40 @@ import CTAButton from '../components/CTAButton';
 import { useLanguage } from '../LanguageContext';
 
 const galleryItems = [
-  { before: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop', after: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=600&h=400&fit=crop', title: 'Deep Scratch Removal — Door Panel', titleRu: 'Глубокая царапина на двери — удаление', titleUa: 'Глибока подряпина на дверях — видалення', category: 'Scratch Repair' },
-  { before: 'https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=600&h=400&fit=crop', after: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&h=400&fit=crop', title: 'Multiple Scratch Repair — Hood', titleRu: 'Множественные царапины на капоте', titleUa: 'Множинні подряпини на капоті', category: 'Scratch Repair' },
-  { before: 'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=600&h=400&fit=crop', after: 'https://images.unsplash.com/photo-1590362891991-f776e747a588?w=600&h=400&fit=crop', title: 'Bumper Scuff Repair', titleRu: 'Потёртость бампера — ремонт', titleUa: 'Потертість бампера — ремонт', category: 'Scuff Repair' },
-  { before: 'https://images.unsplash.com/photo-1606016159991-dfe4f2746ad5?w=600&h=400&fit=crop', after: 'https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600&h=400&fit=crop', title: 'Full Body Polish — Swirl Removal', titleRu: 'Полная полировка — удаление разводов', titleUa: 'Повне полірування — видалення розводів', category: 'Polishing' },
-  { before: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600&h=400&fit=crop', after: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=600&h=400&fit=crop', title: 'Ceramic Coating — Full Vehicle', titleRu: 'Нанесение керамики — весь автомобиль', titleUa: 'Нанесення кераміки — весь автомобіль', category: 'Ceramic Coating' },
-  { before: 'https://images.unsplash.com/photo-1542362567-b07e54358753?w=600&h=400&fit=crop', after: 'https://images.unsplash.com/photo-1471479917193-f00955256257?w=600&h=400&fit=crop', title: 'Key Scratch Repair — Side Panel', titleRu: 'Царапина от ключа — боковая панель', titleUa: 'Подряпина від ключа — бокова панель', category: 'Scratch Repair' },
-  { before: 'https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=600&h=400&fit=crop', after: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=600&h=400&fit=crop', title: 'Ceramic Coating — Hydrophobic Finish', titleRu: 'Керамика — гидрофобный эффект', titleUa: 'Кераміка — гідрофобний ефект', category: 'Ceramic Coating' },
-  { before: 'https://images.unsplash.com/photo-1563720223185-11003d516935?w=600&h=400&fit=crop', after: 'https://images.unsplash.com/photo-1590362891991-f776e747a588?w=600&h=400&fit=crop', title: 'Paint Enhancement — Mobile Polishing', titleRu: 'Улучшение ЛКП — мобильная полировка', titleUa: 'Покращення ЛФП — мобільне полірування', category: 'Polishing' },
-  { before: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&h=400&fit=crop', after: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=600&h=400&fit=crop', title: 'Door Scrape Repair', titleRu: 'Потёртость двери — ремонт', titleUa: 'Потертість дверей — ремонт', category: 'Scuff Repair' },
-  { before: 'https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?w=600&h=400&fit=crop', after: 'https://images.unsplash.com/photo-1471479917193-f00955256257?w=600&h=400&fit=crop', title: 'Shopping Cart Scratch Fix', titleRu: 'Царапина от тележки — крыло', titleUa: 'Подряпина від візка — крило', category: 'Scratch Repair' },
+  {
+    before: 'https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/bc6d1cc5-5f11-4ad7-97f0-e973cdaad7f8/IMG_0894_1772555143768_e4uk8j.webp',
+    after: 'https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/7e4bc8fb-fc57-4da3-8280-df910f9f002a/IMG_0895_1772555146915_4fz9pa.webp',
+    category: 'Scratch Repair',
+  },
+  {
+    before: 'https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/1423a6b4-1de8-46fa-8492-b4ba69bcb93c/IMG_0896_1772555150450_b4f458.webp',
+    after: 'https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/d0a0c6ff-40ca-4f31-9c7d-4e1c5cf05a61/IMG_0897_1772555153646_8vtjdl.webp',
+    category: 'Scuff Repair',
+  },
+  {
+    before: 'https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/1b3a20bd-20d7-43ea-9a5e-a9b4e634cb63/IMG_0898_1772555156839_mtzo3a.webp',
+    after: 'https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/dcf7fa2c-0d1a-4454-8132-8bf7b5264c98/IMG_0899_1772555160303_1qe6bd.webp',
+    category: 'Boat Detailing',
+  },
+  {
+    before: 'https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/f3131fec-172c-4482-8b27-33af56a76c68/IMG_0900_1772555163504_3xfvhn.webp',
+    after: 'https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/3d91b972-466d-47b0-965b-1525ffd0d2b7/IMG_0901_1772555167082_vsk6mm.webp',
+    category: 'Boat Detailing',
+  },
+  {
+    before: 'https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/d535ea1e-b273-4f29-84d1-de60932ddda8/IMG_0902_1772555170259_jrsyk1.webp',
+    after: 'https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/56528d20-2910-482f-8e8f-77d3cb28d64c/IMG_0903_1772555174113_wz60th.webp',
+    category: 'Scratch Repair',
+  },
+  {
+    before: 'https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/abe64bf7-531f-4b07-b283-581cfa3557ff/IMG_0904_1772555188774_qqh0fx.webp',
+    after: 'https://pub-166557a34b174b9a90d5376150b1d05a.r2.dev/assets/cbd89932-3d41-47d9-b9b2-f22101e85658/d458f618-217b-4ec1-bd70-41c7125feefb/IMG_0905_1772555190849_d2izl8.webp',
+    category: 'Polishing',
+  },
 ];
 
 export default function Gallery() {
-  const { t, lang } = useLanguage();
+  const { t } = useLanguage();
   const [activeCategory, setActiveCategory] = useState('All');
   const [lightbox, setLightbox] = useState<number | null>(null);
 
@@ -27,16 +47,10 @@ export default function Gallery() {
     { key: 'Scratch Repair', label: t('gallery.scratchRepair') },
     { key: 'Scuff Repair', label: t('gallery.scuffRepair') },
     { key: 'Polishing', label: t('gallery.polishing') },
-    { key: 'Ceramic Coating', label: t('gallery.ceramicCoating') },
+    { key: 'Boat Detailing', label: t('gallery.boatDetailing') },
   ];
 
   const filtered = activeCategory === 'All' ? galleryItems : galleryItems.filter((item) => item.category === activeCategory);
-
-  const getTitle = (item: typeof galleryItems[0]) => {
-    if (lang === 'ru') return item.titleRu;
-    if (lang === 'ua') return item.titleUa;
-    return item.title;
-  };
 
   return (
     <>
@@ -60,20 +74,16 @@ export default function Gallery() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {filtered.map((item, index) => (
-              <div key={item.title} className="glass-card overflow-hidden group cursor-pointer" onClick={() => setLightbox(index)}>
+              <div key={index} className="glass-card overflow-hidden group cursor-pointer" onClick={() => setLightbox(index)}>
                 <div className="grid grid-cols-2">
                   <div className="relative">
-                    <img src={item.before} alt={`Before - ${getTitle(item)}`} className="w-full h-48 sm:h-64 object-cover" />
+                    <img src={item.before} alt="Before" className="w-full h-48 sm:h-64 object-cover" />
                     <span className="absolute bottom-2 left-2 bg-dark-900/80 text-white text-xs px-3 py-1 rounded-full">{t('gallery.before')}</span>
                   </div>
                   <div className="relative">
-                    <img src={item.after} alt={`After - ${getTitle(item)}`} className="w-full h-48 sm:h-64 object-cover" />
+                    <img src={item.after} alt="After" className="w-full h-48 sm:h-64 object-cover" />
                     <span className="absolute bottom-2 right-2 bg-primary-500/90 text-dark-900 text-xs px-3 py-1 rounded-full font-semibold">{t('gallery.after')}</span>
                   </div>
-                </div>
-                <div className="p-5">
-                  <h3 className="text-white font-semibold mb-1 group-hover:text-primary-400 transition-colors">{getTitle(item)}</h3>
-                  <span className="text-primary-500 text-sm">{categories.find((c) => c.key === item.category)?.label || item.category}</span>
                 </div>
               </div>
             ))}
@@ -91,7 +101,6 @@ export default function Gallery() {
               <div><img src={filtered[lightbox].before} alt="Before" className="w-full rounded-xl" /><p className="text-center text-dark-300 text-sm mt-2">{t('gallery.before')}</p></div>
               <div><img src={filtered[lightbox].after} alt="After" className="w-full rounded-xl" /><p className="text-center text-primary-400 text-sm mt-2">{t('gallery.after')}</p></div>
             </div>
-            <h3 className="text-center text-white font-semibold text-lg mt-6">{getTitle(filtered[lightbox])}</h3>
           </div>
         </div>
       )}

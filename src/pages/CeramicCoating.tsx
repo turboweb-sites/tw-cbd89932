@@ -4,7 +4,6 @@ import {
   Sun,
   Zap,
   Clock,
-  Award,
   Check,
   ChevronRight,
   Sparkles,
@@ -65,7 +64,7 @@ const faqs = [
   { question: 'Is ceramic coating worth it?', answer: 'Absolutely. Ceramic coating provides unmatched protection that wax and sealants simply cannot match.' },
   { question: 'Can I wash my car after ceramic coating?', answer: 'We recommend waiting 7 days before the first wash to allow full curing. After that, regular washing is fine.' },
   { question: 'Does ceramic coating prevent scratches?', answer: 'Ceramic coating provides an additional layer of hardness (rated up to 9H+) that increases scratch resistance, but it does not make your paint scratch-proof.' },
-  { question: 'Do you also coat boats?', answer: 'Yes! We offer marine ceramic coating specifically designed for boats and yachts. It protects against UV, salt water, and environmental damage. Contact us for a free estimate.' },
+  { question: 'Do you also coat boats?', answer: 'Yes! We offer ceramic coating specifically designed for boats and yachts. It protects against UV, salt water, and environmental damage. Contact us for a free estimate.' },
   { question: 'How long does the application process take?', answer: 'The full process typically takes 1-3 days depending on the package.' },
 ];
 
@@ -248,10 +247,12 @@ export default function CeramicCoating() {
               Book Your Consultation
             </CTAButton>
             <a
-              href="tel:+19169173541"
+              href="https://wa.me/19169173541"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-9 py-4 text-base rounded-xl border-2 border-white/20 text-white hover:bg-white/5 font-semibold transition-all"
             >
-              Call (916) 917-3541
+              WhatsApp (916) 917-3541
             </a>
           </div>
         </div>

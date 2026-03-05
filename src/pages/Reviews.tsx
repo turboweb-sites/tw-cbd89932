@@ -1,6 +1,7 @@
 import { Star, Quote } from 'lucide-react';
 import SectionTitle from '../components/SectionTitle';
 import CTAButton from '../components/CTAButton';
+import { useLanguage } from '../LanguageContext';
 
 const reviews = [
   {
@@ -61,7 +62,7 @@ const reviews = [
   },
   {
     name: 'James Patterson',
-    text: 'Someone keyed my car in a parking lot and I was devastated. Prestige came out the next day and repaired the scratch at my home. You can\'t even see where the damage was. Fast, professional, and the mobile service made it so easy.',
+    text: 'Someone keyed my car in a parking lot and I was devastated. They came out the next day and repaired the scratch at my home. You can\'t even see where the damage was. Fast, professional, and the mobile service made it so easy.',
     rating: 5,
     date: '5 months ago',
     location: 'Dana Point, CA',
@@ -69,32 +70,20 @@ const reviews = [
 ];
 
 export default function Reviews() {
+  const { t } = useLanguage();
+
   return (
     <>
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-dark-900 to-dark-950" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black mb-6">
-            Client <span className="text-gradient">Reviews</span>
+            {t('reviewsPage.title').split(' ').slice(0, -1).join(' ')}{' '}
+            <span className="text-gradient">{t('reviewsPage.title').split(' ').slice(-1)}</span>
           </h1>
           <p className="text-dark-200 text-lg max-w-2xl mx-auto mb-8">
-            Don't just take our word for it. Here's what Orange County residents say about our mobile detailing and repair service.
+            {t('reviewsPage.desc')}
           </p>
-
-          <div className="inline-flex items-center gap-6 glass-card px-8 py-4">
-            <div>
-              <div className="text-4xl font-black text-primary-500">4.9</div>
-              <div className="flex gap-1 mt-1">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} size={16} className="text-primary-500 fill-primary-500" />
-                ))}
-              </div>
-            </div>
-            <div className="text-left border-l border-white/10 pl-6">
-              <div className="text-white font-semibold">Based on 200+ reviews</div>
-              <div className="text-dark-400 text-sm">Google Reviews</div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -126,13 +115,13 @@ export default function Reviews() {
       <section className="py-24 bg-dark-900/50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-            Join Hundreds of <span className="text-gradient">Satisfied Clients</span>
+            {t('reviewsPage.ctaTitle1')}{' '}<span className="text-gradient">{t('reviewsPage.ctaTitle2')}</span>
           </h2>
           <p className="text-dark-200 text-lg mb-8">
-            Experience the convenience of mobile detailing that comes to you. Book your appointment and see why we're Orange County's top-rated service.
+            {t('reviewsPage.ctaDesc')}
           </p>
           <CTAButton href="/contact" variant="primary" size="lg">
-            Book Mobile Service
+            {t('home.bookMobile')}
           </CTAButton>
         </div>
       </section>

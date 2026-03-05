@@ -17,7 +17,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLang] = useState<Lang>(() => {
     try {
       const saved = localStorage.getItem('rad-lang');
-      if (saved === 'ru' || saved === 'ua' || saved === 'en') return saved;
+      if (saved === 'ru' || saved === 'es' || saved === 'en') return saved;
     } catch {}
     return 'en';
   });

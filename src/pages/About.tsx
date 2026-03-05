@@ -1,4 +1,4 @@
-import { Shield, Award, Users, Heart, Target, Eye, Truck, Zap } from 'lucide-react';
+import { Shield, Award, Eye, Truck, Zap } from 'lucide-react';
 import SectionTitle from '../components/SectionTitle';
 import CTAButton from '../components/CTAButton';
 import { useLanguage } from '../LanguageContext';
@@ -54,10 +54,6 @@ export default function About() {
             </div>
             <div className="relative">
               <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=600&h=700&fit=crop" alt="Mobile detailing professional" className="rounded-2xl w-full object-cover" />
-              <div className="absolute -bottom-6 -left-6 glass-card p-6">
-                <div className="text-3xl font-black text-primary-500">10+</div>
-                <div className="text-dark-300 text-sm">{t('aboutPage.yearsLabel')}</div>
-              </div>
             </div>
           </div>
         </div>
@@ -106,12 +102,10 @@ export default function About() {
 
       <section className="py-24 bg-dark-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-8 text-center">
             {[
-              { value: '2,500+', label: t('aboutPage.vehiclesServiced') },
-              { value: '10+', label: t('aboutPage.yearsExperience') },
               { value: '100%', label: t('aboutPage.mobileServiceStat') },
-              { value: '4.9/5', label: t('aboutPage.avgRating') },
+              { value: '4.9/5', label: 'Rating' },
             ].map((stat) => (
               <div key={stat.label}>
                 <div className="text-4xl md:text-5xl font-black text-primary-500 mb-2">{stat.value}</div>

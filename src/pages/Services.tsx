@@ -204,7 +204,7 @@ export default function Services() {
           <p className="text-dark-200 text-lg mb-8">{t('servicesPage.notSureDesc')}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <CTAButton href="/contact" variant="primary" size="lg">{t('servicesPage.getFreeQuote')}</CTAButton>
-            <a href="tel:+19169173541" className="inline-flex items-center gap-2 px-9 py-4 text-base rounded-xl border-2 border-white/20 text-white hover:bg-white/5 font-semibold transition-all">Call (916) 917-3541</a>
+            <a href="https://wa.me/19169173541" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-9 py-4 text-base rounded-xl border-2 border-white/20 text-white hover:bg-white/5 font-semibold transition-all">WhatsApp (916) 917-3541</a>
           </div>
         </div>
       </section>

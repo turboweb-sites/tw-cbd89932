@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle, MessageSquare } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, CheckCircle, MessageSquare, MessageCircle, Instagram, Facebook } from 'lucide-react';
 import SectionTitle from '../components/SectionTitle';
 import { useLanguage } from '../LanguageContext';
 
@@ -90,12 +90,39 @@ export default function Contact() {
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center shrink-0">
+                      <MessageCircle size={22} className="text-green-500" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">{t('contactPage.whatsapp')}</h4>
+                      <a href="https://wa.me/19169173541" target="_blank" rel="noopener noreferrer" className="text-dark-300 hover:text-green-400 transition-colors text-sm">(916) 917-3541</a>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl bg-primary-500/10 flex items-center justify-center shrink-0">
                       <Mail size={22} className="text-primary-500" />
                     </div>
                     <div>
                       <h4 className="text-white font-semibold mb-1">{t('contactPage.email')}</h4>
-                      <a href="mailto:info@radus.com" className="text-dark-300 hover:text-primary-400 transition-colors text-sm">info@radus.com</a>
+                      <a href="mailto:p.radion@gmail.com" className="text-dark-300 hover:text-primary-400 transition-colors text-sm">p.radion@gmail.com</a>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center shrink-0">
+                      <Instagram size={22} className="text-pink-500" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Instagram</h4>
+                      <a href="https://instagram.com/RAD_US" target="_blank" rel="noopener noreferrer" className="text-dark-300 hover:text-pink-400 transition-colors text-sm">@RAD_US</a>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center shrink-0">
+                      <Facebook size={22} className="text-blue-500" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Facebook</h4>
+                      <a href="https://facebook.com/RADUS" target="_blank" rel="noopener noreferrer" className="text-dark-300 hover:text-blue-400 transition-colors text-sm">RAD US</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -228,7 +255,7 @@ export default function Contact() {
           <SectionTitle label="FAQ" title={t('contactPage.faqTitle')} />
           <div className="space-y-4">
             {[
-              { q: 'How do I book an appointment?', a: 'You can book through our online form above, call us at (916) 917-3541, or email us. We\'ll confirm within 1 hour during business hours.' },
+              { q: 'How do I book an appointment?', a: 'You can book through our online form above, call us at (916) 917-3541, message us on WhatsApp, or email us at p.radion@gmail.com. We\'ll confirm within 1 hour during business hours.' },
               { q: 'Do you offer free estimates?', a: 'Yes! We offer free estimates for all services. Send us a photo of the damage or describe the issue and we\'ll give you an honest assessment.' },
               { q: 'Do you offer mobile service?', a: 'Yes! We are 100% mobile. Our fully equipped unit comes to your location — home, office, marina, or anywhere in Orange County.' },
               { q: 'Do you service boats too?', a: 'Absolutely! We offer the same scratch repair, polishing, and ceramic coating services for boats and yachts. We come right to your marina or dock.' },
