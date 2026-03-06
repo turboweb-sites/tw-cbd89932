@@ -52,13 +52,6 @@ export default function Services() {
       includes: ['Multi-stage wet sanding', 'Machine polishing', 'UV-protective clear coat', 'Improves nighttime visibility', 'Restores vehicle appearance', 'Done in under 1 hour'],
     },
     {
-      icon: Truck,
-      title: t('services.mobile'),
-      priceRange: '$199 – $799',
-      description: t('services.mobileDesc'),
-      includes: ['Self-contained water & power supply', 'Full tool & product setup', 'Interior deep clean & sanitize', 'Exterior wash, clay, & polish', 'Leather conditioning', 'Serving all of Orange County'],
-    },
-    {
       icon: Anchor,
       title: t('boats.label'),
       priceRange: '$299 – $3,000',
@@ -69,7 +62,7 @@ export default function Services() {
 
   return (
     <>
-      {/* Hero — фото полировки авто / мобильный сервис */}
+      {/* Hero */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0">
           <img

@@ -57,7 +57,7 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero — реальное фото полировки авто */}
+      {/* Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
@@ -77,14 +77,14 @@ export default function Home() {
             </div>
 
             <div className="mb-4 flex items-center gap-5">
-              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden bg-dark-800 shrink-0 shadow-lg shadow-black/30">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden bg-dark-800 shrink-0 shadow-lg shadow-black/30 flex items-center justify-center">
                 <img
                   src={LOGO_URL}
                   alt="R.A.D. US Logo"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div>
+              <div className="flex flex-col justify-center">
                 <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-wider leading-none">
                   R.A.D. <span className="text-gradient">US</span>
                 </h1>
@@ -180,7 +180,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Before / After showcase — используем загруженные фото */}
+      {/* Before / After showcase */}
       <section className="py-24 bg-dark-900/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionTitle
@@ -231,7 +231,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Boat section — реальные фото лодок */}
+      {/* Boat section */}
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0">
           <img
@@ -263,7 +263,6 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Boat photos — реальные было/стало из галереи + стоковые лодки */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
             <div className="relative overflow-hidden rounded-2xl group">
               <img
@@ -296,7 +295,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Brand divider — реальное фото детейлинга */}
+      {/* Brand divider */}
       <section className="relative h-[50vh] md:h-[60vh] overflow-hidden">
         <img
           src="https://images.unsplash.com/photo-1619405399517-d7fce0f13302?w=1920&h=900&fit=crop"
@@ -306,7 +305,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/30 to-dark-950/60" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center px-4">
-            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden bg-dark-800 mx-auto mb-4 shadow-lg shadow-black/40">
+            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden bg-dark-800 mx-auto mb-4 shadow-lg shadow-black/40 flex items-center justify-center">
               <img
                 src={LOGO_URL}
                 alt="R.A.D. US Logo"
@@ -350,7 +349,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Mobile CTA — фото мобильного сервиса */}
+      {/* Mobile CTA */}
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0">
           <img

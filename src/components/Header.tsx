@@ -32,7 +32,6 @@ export default function Header() {
     setIsOpen(false);
   }, [location]);
 
-  // Prevent body scroll when menu is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -58,18 +57,18 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <Link href="/">
               <a className="flex items-center gap-3 group">
-                <div className="w-11 h-11 rounded-xl overflow-hidden bg-dark-800 flex items-center justify-center shrink-0">
+                <div className="w-11 h-11 rounded-xl overflow-hidden bg-dark-800 shrink-0 flex items-center justify-center">
                   <img
                     src={LOGO_URL}
                     alt="R.A.D. US Logo"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div>
-                  <span className="text-xl font-black tracking-wider">
+                <div className="flex flex-col justify-center">
+                  <span className="text-xl font-black tracking-wider leading-none">
                     R.A.D.{' '}<span className="text-primary-500">US</span>
                   </span>
-                  <span className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-dark-300 -mt-1">
+                  <span className="hidden sm:block text-[10px] uppercase tracking-[0.2em] text-dark-300 mt-0.5">
                     Real Auto Detailing
                   </span>
                 </div>
@@ -114,18 +113,15 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Mobile menu overlay — full screen with solid dark background + blur */}
       {isOpen && (
         <div
           className="fixed inset-0 z-40 lg:hidden"
           style={{ top: 0 }}
         >
-          {/* Dark backdrop covering entire screen */}
           <div
             className="absolute inset-0 bg-dark-950/98 backdrop-blur-xl"
             onClick={() => setIsOpen(false)}
           />
-          {/* Menu content positioned below header */}
           <div
             className="relative w-full overflow-y-auto"
             style={{ paddingTop: 'calc(36px + 72px)' }}
